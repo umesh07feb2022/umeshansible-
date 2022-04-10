@@ -5,7 +5,7 @@
   - name: I want to install multipackages 
     apt:
      name:  "{{ item }}"
-     state: started
+     state: present 
     loop:
      - git
      - tree
