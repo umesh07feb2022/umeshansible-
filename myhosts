@@ -4,6 +4,3 @@
 
 
 
-[webservers:vars]
- mywebserveronubutnu= apache2
- mywebserveronredhat= httpd
