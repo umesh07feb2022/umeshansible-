@@ -4,6 +4,6 @@
 
 
 
-[webservers: vars]
- mywebserveronubutnu = apache22
- mywebserveronredhat = httpd
+[webservers:vars]
+ mywebserveronubutnu= apache22
+ mywebserveronredhat= httpd
