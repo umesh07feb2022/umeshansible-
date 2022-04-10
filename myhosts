@@ -5,5 +5,5 @@
 
 
 [webservers:vars]
- mywebserveronubutnu= apache22
+ mywebserveronubutnu= apache2
  mywebserveronredhat= httpd
