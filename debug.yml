@@ -2,10 +2,10 @@
 - hosts: 172.31.20.250
   become: yes
   tasks:
-  - name: I want to execute linux command 
-    command: hostsname -f
-    resister: myresult 
+   - name: I want to execute linux command 
+     command: hostsname -f
+     resister: myresult 
 
-  - name: I want to display my fisrs task result 
-    debug:
+   - name: I want to display my fisrs task result 
+     debug:
      msg: "{{myresult}}"
