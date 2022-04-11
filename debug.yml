@@ -4,7 +4,7 @@
   tasks:
    - name: I want to execute linux command 
      command: hostsname -f
-     resister: myresult 
+     register: myresult 
 
    - name: I want to display my fisrs task result 
      debug:
