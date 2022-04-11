@@ -3,11 +3,11 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml 
-  - name: i want to see result
-    debug:
-       msg: "{{myresult}}"
   - name: i want to install webserver
     apt:
       name: apache2
       state: present
     register: myresult
+  - name: i want to see result
+    debug:
+       msg: "{{myresult}}"
