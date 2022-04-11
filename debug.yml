@@ -8,16 +8,16 @@
 
    - name: I want to display my fisrs task result 
      debug:
-      msg: "{{myresult}}"
+       msg: "{{myresult}}"
 
    - name: I want to install git
      apt:
-      name: git
-      state: present  
-     when: mysesult.stderr==""    
+       name: git
+       state: present  
+     when: myresult.stderr==""    
 
    - name: I want to install tree
      apt:
-      name: tree
-      state: present  
-     when: mysesult. stderr!==""     
+       name: tree
+       state: present  
+     when: myresult. stderr!==""     
