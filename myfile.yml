@@ -4,8 +4,4 @@
       path: /home/ubuntu/mytestfile
       state: touch
       owner: umesh
-   register: myresult
-
- - name: i want to see result
-   debug:
-       msg: "{{myresult}}" 
+   
