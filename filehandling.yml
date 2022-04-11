@@ -2,12 +2,8 @@
 - hosts: 172.31.26.218
   become: yes
   tasks:
-  - name: i want to create a file om ubuntu node
-    file:
-     path: /home/ubuntu/mytestfile
-     state: touch
-     owner: umesh
-    register: myresult
-  - name: i want to see result
-    debug:
-     msg: "{{myresult}}" 
+  - include_tasks: myfile.yml
+  - name: i want to install webserver
+    apt:
+      name: apache2
+      state: present
