@@ -14,7 +14,7 @@
      apt:
       name: git
       state: present  
-     when: mysesult. stderr==""    
+     when: mysesult.stderr==""    
 
    - name: I want to install tree
      apt:
