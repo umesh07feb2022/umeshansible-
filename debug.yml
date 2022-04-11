@@ -16,7 +16,7 @@
       state: present  
      when: mysesult. stderr==""    
 
-   - name: I want to install git
+   - name: I want to install tree
      apt:
       name: tree
       state: present  
