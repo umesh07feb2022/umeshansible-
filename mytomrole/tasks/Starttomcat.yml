@@ -5,3 +5,4 @@
     daemon_reload: yes
     name: tomcat
     enabled: True
+    group: tomcat
