@@ -2,11 +2,10 @@
 - name: Give the tomcat group ownership
   file:
     path: /opt/tomcat
-    group: tomcat
     state: directory
     recurse: yes
     owner: tomcat
-   
+    group: tomcat 
 - name:     give the tomcat group read access to the conf
   file:
     path: /opt/tomcat
@@ -42,5 +41,3 @@
        path: /opt/tomcat/logs
        recurse: yes
        owner: tomcat
-
-
