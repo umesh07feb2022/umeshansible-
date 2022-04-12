@@ -5,7 +5,7 @@
     state: directory
     recurse: yes
     owner: tomcat
-    group: tomcat 
+  
 - name:     give the tomcat group read access to the conf
   file:
     path: /opt/tomcat
