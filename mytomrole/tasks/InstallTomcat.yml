@@ -10,8 +10,7 @@
    path: /opt/tomcat
    state: directory
 
-- name: unarchive tar file
+- name: extract the archive
   command:
-    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
-    dest: /opt/tomcat  
-    creates: /opt/tomcat/LICENSE
+      cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+      creates: /opt/tomcat/LICENSE
