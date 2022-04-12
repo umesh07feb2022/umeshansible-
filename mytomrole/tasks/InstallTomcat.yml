@@ -1,0 +1,17 @@
+---
+- name: Tomcat 8 is to download the latest binary release
+  get_url:
+    url: https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.5/bin/apache-tomcat-8.5.5.tar.gz
+    dest: /home/ubuntu/apache-tomcat-8.5.5.tar.gz
+    force_basic_auth: yes
+
+- name: create directory
+  file:
+   path: /opt/tomcat
+   state: directory
+
+- name: unarchive tar file
+  command:
+    cmd: sudo tar xzvf /home/ubuntu/apache-tomcat-8.5.5.tar.gz -C /opt/tomcat --strip-components=1
+    dest: /opt/tomcat  
+    creates: /opt/tomcat/LICENSE

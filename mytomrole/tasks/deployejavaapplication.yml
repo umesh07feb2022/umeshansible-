@@ -1,0 +1,6 @@
+---
+- name: deploye java application
+  get_url:
+    url: https://maha4455.s3.us-west-2.amazonaws.com/mahaLogin.war
+    dest: /opt/tomcat/webapps/
+    force_basic_auth: yes
