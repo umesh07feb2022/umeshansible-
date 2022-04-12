@@ -1,7 +1,7 @@
 ---
-- name: start tomcat systemctl
+- name: start tomcat
   systemd:
-    name: tomcat
     state: restarted
-    daemon_reload: yes 
-    enabled: yes
+    daemon_reload: yes
+    name: tomcat
+    enabled: True
